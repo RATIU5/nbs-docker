@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  next-app:
+    build:
+      context: ./web
+      dockerfile: dev.Dockerfile
+    container_name: next-app
