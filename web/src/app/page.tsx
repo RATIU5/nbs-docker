@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { strapiQuery } from "~/lib/strapi-query";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:18-alpine
 
 WORKDIR /app
 
@@ -14,8 +14,8 @@ RUN \
 
 COPY src ./src
 COPY public ./public
-COPY next.config.mjs .
-COPY tsconfig.json .
+COPY next.config.mjs tsconfig.json ./
+COPY tailwind.config.ts postcss.config.js ./
 
 # Next.js collects completely anonymous telemetry data about general usage. Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line to disable telemetry at run time

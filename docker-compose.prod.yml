@@ -5,7 +5,7 @@ services:
     container_name: web
     build:
       context: ./web
-      dockerfile: dev.Dockerfile
+      dockerfile: prod.Dockerfile
 
     env_file: .env
     environment:
@@ -36,7 +36,6 @@ services:
       context: ./strapi
       dockerfile: Dockerfile
     restart: unless-stopped
-    hostname: strapi
     env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
