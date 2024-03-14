@@ -1,4 +1,3 @@
-
 const cspHeader = `
 base-uri 'self';
 form-action 'self';
@@ -10,9 +9,13 @@ const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
   images: {
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
-        hostname: process.env.BIGCOMMERCE_CDN_HOSTNAME ?? '*.bigcommerce.com',
+        protocol: "https",
+        hostname: "cdn11.bigcommerce.com",
+        port: "",
+        pathname: `/*/**`,
       },
     ],
   },

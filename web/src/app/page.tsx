@@ -1,3 +1,9 @@
+import HomeSlider from "~/components/home-slider";
+
 export default function Home() {
-  return <main className=""></main>;
+  return (
+    <main>
+      <HomeSlider />
+    </main>
+  );
 }
