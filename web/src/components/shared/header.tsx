@@ -100,7 +100,7 @@ export default function Header() {
       </div>
       <div
         className={cn(
-          "left-0 p-8 bg-neutral-200 absolute w-full xl:hidden z-0 shadow-md -translate-y-[150%] transition-all ease-in-out duration-200",
+          "left-0 p-8 bg-neutral-200 absolute w-full xl:hidden z-10 shadow-md -translate-y-[150%] transition-all ease-in-out duration-200",
           {
             "translate-y-0": menuOpen,
           }
