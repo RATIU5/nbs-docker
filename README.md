@@ -1,5 +1,5 @@
-- [Strapi with Docker](https://docs.strapi.io/dev-docs/installation/docker)
-
+# NBS Stack (Next.js, BigCommerce, Strapi)
+This is a full stack e-commerce application built with Next.js, BigCommerce, and Strapi.
 
 ## Prerequisites
 
@@ -22,6 +22,8 @@ docker compose -f ./docker-compose.dev.yml up
 ```
 
 Navigate to the Strapi admin panel at [http://localhost:1337/admin](http://localhost:1337/admin) and create an admin user.
+
+The frontend is hosted on [http://localhost:3000](http://localhost:3000).
 
 ## Building for Production
 
